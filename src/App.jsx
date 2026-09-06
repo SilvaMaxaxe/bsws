@@ -42,18 +42,9 @@ function App() {
           label: "SOBRE MIM",
           title: "Tecnologia, criatividade e soluções práticas.",
           paragraph1:
-            "Sou Silva Maxaxe, também conhecido como Rich Dot Com. Trabalho com tecnologia, ferramentas digitais, tradução, inteligência artificial, revisão de conteúdos e assistência administrativa.",
+            "Sou Silva Maxaxe, também conhecido como Rich Dot Com. Disponibilizo soluções digitais, apoio informático, tradução, inteligência artificial, revisão de conteúdos e assistência administrativa.",
           paragraph2:
-            "O meu objectivo é transformar necessidades em soluções simples, funcionais e profissionais, ajudando clientes a poupar tempo e a melhorar a sua produtividade digital.",
-          experience: "Experiência",
-          experienceText:
-            "Experiência profissional em projectos digitais e serviços online.",
-          focus: "Foco",
-          focusText:
-            "Qualidade, organização e soluções eficientes.",
-          languages: "Idiomas",
-          languagesText:
-            "Português e Inglês.",
+            "O meu objectivo é transformar necessidades em soluções simples, funcionais e profissionais, ajudando pessoas e empresas a poupar tempo e a melhorar a sua produtividade digital.",
         },
 
         services: {
@@ -107,11 +98,23 @@ function App() {
           title: "Tem um projecto em mente?",
           description:
             "Fale comigo sobre o seu projecto, necessidade ou ideia. Vamos encontrar uma solução adequada.",
+
+          address: "Endereço",
+          addressText: "Maputo, Magoanine B, Moçambique",
+
+          phone: "Telefone",
+          phone1: "+258 875 088 297",
+          phone2: "+258 841 345 529",
+
           whatsapp: "Falar pelo WhatsApp",
           email: "Enviar e-mail",
+          facebook: "Facebook",
+          instagram: "Instagram",
+          github: "GitHub",
         },
 
         footer: "© 2026 Silva Maxaxe · AKA: Rich Dot Com",
+
         language: "Idioma",
         changeLanguage: "Mudar idioma",
       }
@@ -138,18 +141,9 @@ function App() {
           label: "ABOUT ME",
           title: "Technology, creativity and practical solutions.",
           paragraph1:
-            "I'm Silva Maxaxe, also known as Rich Dot Com. I work with technology, digital tools, translation, artificial intelligence, content review and administrative support.",
+            "I'm Silva Maxaxe, also known as Rich Dot Com. I provide digital solutions, IT support, translation, artificial intelligence, content review and administrative assistance.",
           paragraph2:
-            "My goal is to turn needs into simple, functional and professional solutions, helping clients save time and improve their digital productivity.",
-          experience: "Experience",
-          experienceText:
-            "Professional experience in digital projects and online services.",
-          focus: "Focus",
-          focusText:
-            "Quality, organisation and efficient solutions.",
-          languages: "Languages",
-          languagesText:
-            "Portuguese and English.",
+            "My goal is to turn needs into simple, functional and professional solutions, helping individuals and businesses save time and improve their digital productivity.",
         },
 
         services: {
@@ -203,11 +197,23 @@ function App() {
           title: "Have a project in mind?",
           description:
             "Let's talk about your project, need or idea. Together we can find the right solution.",
+
+          address: "Address",
+          addressText: "Maputo, Magoanine B, Mozambique",
+
+          phone: "Phone",
+          phone1: "+258 875 088 297",
+          phone2: "+258 841 345 529",
+
           whatsapp: "Chat on WhatsApp",
           email: "Send an email",
+          facebook: "Facebook",
+          instagram: "Instagram",
+          github: "GitHub",
         },
 
         footer: "© 2026 Silva Maxaxe · AKA: Rich Dot Com",
+
         language: "Language",
         changeLanguage: "Change language",
       }
@@ -220,8 +226,7 @@ function App() {
     return (
       <main className="min-h-screen overflow-hidden bg-[#030712] text-white">
         <div className="relative flex min-h-screen items-center justify-center px-5 py-12">
-
-          {/* Fundo tecnológico */}
+          
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(6,182,212,0.15),transparent_30%),radial-gradient(circle_at_80%_80%,rgba(37,99,235,0.15),transparent_30%)]" />
 
           <div
@@ -235,9 +240,7 @@ function App() {
 
           <div className="relative z-10 w-full max-w-4xl">
 
-            {/* LOGO / NOME */}
             <div className="mb-12 text-center">
-
               <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-3xl border border-cyan-400/30 bg-cyan-400/10 text-2xl font-black text-cyan-300 shadow-lg shadow-cyan-500/10">
                 SM
               </div>
@@ -255,14 +258,11 @@ function App() {
                   Rich Dot Com
                 </span>
               </p>
-
             </div>
 
-            {/* ESCOLHA */}
             <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-2xl backdrop-blur-xl sm:p-10">
 
               <div className="mb-8 text-center">
-
                 <h2 className="text-2xl font-bold sm:text-3xl">
                   Bem-vindo / Welcome
                 </h2>
@@ -270,23 +270,18 @@ function App() {
                 <p className="mt-3 text-slate-400">
                   Escolha o idioma / Choose your language
                 </p>
-
               </div>
 
               <div className="grid gap-5 sm:grid-cols-2">
 
-                {/* PORTUGUÊS */}
                 <button
                   onClick={() => changeLanguage("pt")}
                   className="group rounded-2xl border border-white/10 bg-slate-900/70 p-8 text-left transition duration-300 hover:-translate-y-1 hover:border-cyan-400/50 hover:bg-cyan-400/10 hover:shadow-xl hover:shadow-cyan-500/10"
                 >
-
                   <div className="mb-6 flex items-center justify-end">
-
                     <span className="text-2xl text-cyan-400 transition group-hover:translate-x-2">
                       →
                     </span>
-
                   </div>
 
                   <h3 className="text-2xl font-bold">
@@ -296,21 +291,16 @@ function App() {
                   <p className="mt-2 text-sm text-slate-400">
                     Seleccionar idioma
                   </p>
-
                 </button>
 
-                {/* ENGLISH */}
                 <button
                   onClick={() => changeLanguage("en")}
                   className="group rounded-2xl border border-white/10 bg-slate-900/70 p-8 text-left transition duration-300 hover:-translate-y-1 hover:border-blue-400/50 hover:bg-blue-400/10 hover:shadow-xl hover:shadow-blue-500/10"
                 >
-
                   <div className="mb-6 flex items-center justify-end">
-
                     <span className="text-2xl text-blue-400 transition group-hover:translate-x-2">
                       →
                     </span>
-
                   </div>
 
                   <h3 className="text-2xl font-bold">
@@ -320,7 +310,6 @@ function App() {
                   <p className="mt-2 text-sm text-slate-400">
                     Select language
                   </p>
-
                 </button>
 
               </div>
@@ -355,13 +344,11 @@ function App() {
             href="#home"
             className="flex items-center gap-3"
           >
-
             <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-cyan-400/30 bg-cyan-400/10 font-black text-cyan-300">
               SM
             </div>
 
             <div className="hidden sm:block">
-
               <div className="font-bold leading-none">
                 Silva Maxaxe
               </div>
@@ -369,9 +356,7 @@ function App() {
               <div className="mt-1 text-xs text-slate-500">
                 AKA: Rich Dot Com
               </div>
-
             </div>
-
           </a>
 
           <nav className="hidden items-center gap-8 md:flex">
@@ -425,7 +410,6 @@ function App() {
         className="relative flex min-h-screen items-center overflow-hidden px-5 pb-16 pt-32 lg:px-8"
       >
 
-        {/* Fundo */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_25%,rgba(6,182,212,0.14),transparent_30%),radial-gradient(circle_at_85%_70%,rgba(37,99,235,0.16),transparent_30%)]" />
 
         <div
@@ -438,8 +422,6 @@ function App() {
         />
 
         <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-14 lg:grid-cols-2">
-
-          {/* TEXTO */}
 
           <div>
 
@@ -500,24 +482,18 @@ function App() {
 
           <div className="relative mx-auto w-full max-w-xl">
 
-            {/* Luz atrás do computador */}
             <div className="absolute left-1/2 top-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-400/10 blur-3xl" />
 
             {/* MONITOR */}
 
             <div className="relative z-10 rounded-2xl border border-white/15 bg-slate-900/90 p-3 shadow-2xl shadow-cyan-950/40">
 
-              {/* Barra do monitor */}
               <div className="flex items-center justify-between rounded-t-xl border-b border-white/10 bg-[#0b1220] px-4 py-3">
 
                 <div className="flex gap-2">
-
                   <span className="h-3 w-3 rounded-full bg-red-400/80" />
-
                   <span className="h-3 w-3 rounded-full bg-yellow-400/80" />
-
                   <span className="h-3 w-3 rounded-full bg-green-400/80" />
-
                 </div>
 
                 <div className="h-2 w-20 rounded-full bg-white/5" />
@@ -530,10 +506,8 @@ function App() {
 
               <div className="relative flex min-h-[300px] items-center justify-center overflow-hidden rounded-b-xl bg-[#020617] sm:min-h-[350px]">
 
-                {/* brilho */}
                 <div className="absolute left-1/2 top-1/2 h-48 w-48 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-400/10 blur-3xl" />
 
-                {/* Logo dentro do monitor */}
                 <div className="relative text-center">
 
                   <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-3xl border border-cyan-400/30 bg-cyan-400/10 text-3xl font-black text-cyan-300 shadow-lg shadow-cyan-500/10">
@@ -552,59 +526,25 @@ function App() {
 
                 </div>
 
-                {/* Pequenos elementos tecnológicos */}
+                <div className="absolute left-8 top-8 h-2 w-2 animate-pulse rounded-full bg-cyan-400" />
 
-                <div className="absolute left-8 top-8 h-2 w-2 rounded-full bg-cyan-400 animate-pulse" />
-
-                <div className="absolute right-10 top-12 h-1.5 w-1.5 rounded-full bg-blue-400 animate-pulse" />
+                <div className="absolute right-10 top-12 h-1.5 w-1.5 animate-pulse rounded-full bg-blue-400" />
 
                 <div className="absolute bottom-10 left-12 h-1.5 w-1.5 rounded-full bg-cyan-400/70" />
 
-                <div className="absolute bottom-8 right-8 h-2 w-2 rounded-full bg-blue-400 animate-pulse" />
+                <div className="absolute bottom-8 right-8 h-2 w-2 animate-pulse rounded-full bg-blue-400" />
 
               </div>
 
             </div>
 
-            {/* SUPORTE DO MONITOR */}
+            {/* SUPORTE */}
 
             <div className="relative z-10 mx-auto h-14 w-24 border-x border-white/10 bg-slate-800/80" />
 
             {/* BASE */}
 
             <div className="relative z-10 mx-auto h-3 w-48 rounded-full border border-white/10 bg-slate-700/80" />
-
-            {/* STATUS */}
-
-            <div className="absolute -left-3 top-12 hidden rounded-xl border border-cyan-400/20 bg-slate-900/90 px-4 py-3 shadow-xl sm:block">
-
-              <div className="text-xs text-slate-500">
-                STATUS
-              </div>
-
-              <div className="mt-1 flex items-center gap-2 text-sm font-bold text-green-300">
-
-                <span className="h-2 w-2 rounded-full bg-green-400" />
-
-                ONLINE
-
-              </div>
-
-            </div>
-
-            {/* DIGITAL */}
-
-            <div className="absolute -right-3 bottom-20 hidden rounded-xl border border-blue-400/20 bg-slate-900/90 px-4 py-3 shadow-xl sm:block">
-
-              <div className="text-xs text-slate-500">
-                MODE
-              </div>
-
-              <div className="mt-1 text-sm font-bold text-blue-300">
-                DIGITAL
-              </div>
-
-            </div>
 
           </div>
 
@@ -646,60 +586,39 @@ function App() {
                 {content.about.paragraph2}
               </p>
 
-              <div className="mt-10 grid gap-4 sm:grid-cols-3">
+              {/* BOTÕES DE CONTACTO */}
 
-                <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+              <div className="mt-10 flex flex-wrap gap-3">
 
-                  <div className="text-2xl">
-                    ⚡
-                  </div>
+                <a
+                  href="https://wa.me/258875088297"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-xl bg-green-500 px-5 py-3 font-bold text-white transition hover:-translate-y-0.5 hover:bg-green-400"
+                >
+                  WhatsApp
+                </a>
 
-                  <h3 className="mt-4 font-bold">
-                    {content.about.experience}
-                  </h3>
+                <a
+                  href="mailto:smaxaxe@gmail.com"
+                  className="rounded-xl border border-white/10 bg-white/5 px-5 py-3 font-bold text-white transition hover:border-cyan-400/40 hover:text-cyan-300"
+                >
+                  Email
+                </a>
 
-                  <p className="mt-2 text-sm leading-6 text-slate-500">
-                    {content.about.experienceText}
-                  </p>
-
-                </div>
-
-                <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-
-                  <div className="text-2xl">
-                    🎯
-                  </div>
-
-                  <h3 className="mt-4 font-bold">
-                    {content.about.focus}
-                  </h3>
-
-                  <p className="mt-2 text-sm leading-6 text-slate-500">
-                    {content.about.focusText}
-                  </p>
-
-                </div>
-
-                <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-
-                  <div className="text-2xl">
-                    🌐
-                  </div>
-
-                  <h3 className="mt-4 font-bold">
-                    {content.about.languages}
-                  </h3>
-
-                  <p className="mt-2 text-sm leading-6 text-slate-500">
-                    {content.about.languagesText}
-                  </p>
-
-                </div>
+                <a
+                  href="tel:+258875088297"
+                  className="rounded-xl border border-white/10 bg-white/5 px-5 py-3 font-bold text-white transition hover:border-cyan-400/40 hover:text-cyan-300"
+                >
+                  Telefone
+                </a>
 
               </div>
+
             </div>
 
           </div>
+
         </div>
       </section>
 
@@ -762,6 +681,7 @@ function App() {
             ))}
 
           </div>
+
         </div>
       </section>
 
@@ -774,9 +694,9 @@ function App() {
         className="px-5 py-24 lg:px-8"
       >
 
-        <div className="mx-auto max-w-5xl">
+        <div className="mx-auto max-w-6xl">
 
-          <div className="relative overflow-hidden rounded-3xl border border-cyan-400/20 bg-cyan-400/[0.05] p-8 text-center sm:p-14">
+          <div className="relative overflow-hidden rounded-3xl border border-cyan-400/20 bg-cyan-400/[0.05] p-8 sm:p-14">
 
             <div className="absolute -right-20 -top-20 h-60 w-60 rounded-full bg-cyan-400/10 blur-3xl" />
 
@@ -784,74 +704,172 @@ function App() {
 
             <div className="relative">
 
-              <p className="text-sm font-bold tracking-[0.2em] text-cyan-400">
-                {content.contact.label}
-              </p>
+              <div className="text-center">
 
-              <h2 className="mt-4 text-4xl font-black sm:text-5xl">
-                {content.contact.title}
-              </h2>
+                <p className="text-sm font-bold tracking-[0.2em] text-cyan-400">
+                  {content.contact.label}
+                </p>
 
-              <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-400">
-                {content.contact.description}
-              </p>
+                <h2 className="mt-4 text-4xl font-black sm:text-5xl">
+                  {content.contact.title}
+                </h2>
 
-              <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
+                <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-400">
+                  {content.contact.description}
+                </p>
+
+              </div>
+
+              {/* ==================================================
+                  DADOS DE CONTACTO
+              ================================================== */}
+
+              <div className="mx-auto mt-12 grid max-w-4xl gap-5 sm:grid-cols-2">
+
+                {/* ENDEREÇO */}
+
+                <div className="rounded-2xl border border-white/10 bg-slate-950/50 p-6">
+
+                  <p className="text-sm font-semibold text-cyan-400">
+                    {content.contact.address}
+                  </p>
+
+                  <p className="mt-3 leading-7 text-slate-300">
+                    {content.contact.addressText}
+                  </p>
+
+                </div>
+
+                {/* TELEFONES */}
+
+                <div className="rounded-2xl border border-white/10 bg-slate-950/50 p-6">
+
+                  <p className="text-sm font-semibold text-cyan-400">
+                    {content.contact.phone}
+                  </p>
+
+                  <div className="mt-3 space-y-2">
+
+                    <a
+                      href="tel:+258875088297"
+                      className="block text-slate-300 transition hover:text-cyan-400"
+                    >
+                      {content.contact.phone1}
+                    </a>
+
+                    <a
+                      href="tel:+258841345529"
+                      className="block text-slate-300 transition hover:text-cyan-400"
+                    >
+                      {content.contact.phone2}
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              {/* ==================================================
+                  BOTÕES PRINCIPAIS
+              ================================================== */}
+
+              <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
 
                 <a
                   href="https://wa.me/258875088297"
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-xl bg-green-500 px-7 py-4 font-bold text-white transition hover:-translate-y-0.5 hover:bg-green-400"
+                  className="rounded-xl bg-green-500 px-7 py-4 text-center font-bold text-white transition hover:-translate-y-0.5 hover:bg-green-400"
                 >
                   💬 {content.contact.whatsapp}
                 </a>
 
                 <a
-                  href="mailto:SEUEMAIL@gmail.com"
-                  className="rounded-xl border border-white/10 bg-white/5 px-7 py-4 font-bold text-white transition hover:border-cyan-400/40 hover:bg-white/10"
+                  href="mailto:smaxaxe@gmail.com"
+                  className="rounded-xl bg-cyan-400 px-7 py-4 text-center font-bold text-slate-950 transition hover:-translate-y-0.5 hover:bg-cyan-300"
                 >
                   ✉️ {content.contact.email}
                 </a>
 
               </div>
 
-              {/* REDES SOCIAIS */}
+              {/* ==================================================
+                  OUTROS CONTACTOS
+              ================================================== */}
 
-              <div className="mt-10 flex flex-wrap justify-center gap-3">
-
-                <a
-                  href="https://github.com/SilvaMaxaxe"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm text-slate-300 transition hover:border-white/20 hover:text-white"
-                >
-                  GitHub
-                </a>
+              <div className="mt-8 flex flex-wrap justify-center gap-3">
 
                 <a
-                  href="https://www.instagram.com/smaxaxe/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm text-slate-300 transition hover:border-white/20 hover:text-white"
+                  href="tel:+258875088297"
+                  className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm text-slate-300 transition hover:border-cyan-400/30 hover:text-cyan-300"
                 >
-                  Instagram
+                  ☎️ Telefone
                 </a>
 
                 <a
                   href="https://www.facebook.com/silvaasahdkhaled"
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm text-slate-300 transition hover:border-white/20 hover:text-white"
+                  className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm text-slate-300 transition hover:border-cyan-400/30 hover:text-cyan-300"
                 >
                   Facebook
                 </a>
 
+                <a
+                  href="https://www.instagram.com/smaxaxe/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm text-slate-300 transition hover:border-cyan-400/30 hover:text-cyan-300"
+                >
+                  Instagram
+                </a>
+
+                <a
+                  href="https://github.com/SilvaMaxaxe"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm text-slate-300 transition hover:border-cyan-400/30 hover:text-cyan-300"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
+              {/* EMAILS */}
+
+              <div className="mt-10 text-center">
+
+                <p className="text-sm text-slate-500">
+                  Email
+                </p>
+
+                <div className="mt-3 flex flex-col items-center gap-2">
+
+                  <a
+                    href="mailto:smaxaxe@gmail.com"
+                    className="text-slate-300 transition hover:text-cyan-400"
+                  >
+                    smaxaxe@gmail.com
+                  </a>
+
+                  <a
+                    href="mailto:smaxaxe@hotmail.com"
+                    className="text-slate-300 transition hover:text-cyan-400"
+                  >
+                    smaxaxe@hotmail.com
+                  </a>
+
+                </div>
+
               </div>
 
             </div>
+
           </div>
+
         </div>
+
       </section>
 
       {/* ========================================================
