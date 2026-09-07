@@ -29,7 +29,8 @@ function App() {
         },
 
         hero: {
-          badge: "TECNOLOGIA & SOLUÇÕES DIGITAIS",
+          badge: "BSWS · BUSINESS SOFTWARE SOLUTIONS",
+          slogan: "Smart Solutions for Modern Business",
           greeting: "Olá, eu sou",
           name: "Silva Maxaxe",
           aka: "AKA: Rich Dot Com",
@@ -139,7 +140,8 @@ function App() {
         },
 
         hero: {
-          badge: "TECHNOLOGY & DIGITAL SOLUTIONS",
+          badge: "BSWS · BUSINESS SOFTWARE SOLUTIONS",
+          slogan: "Smart Solutions for Modern Business",
           greeting: "Hello, I'm",
           name: "Silva Maxaxe",
           aka: "AKA: Rich Dot Com",
@@ -483,7 +485,17 @@ function App() {
 
               <span className="h-2 w-2 animate-pulse rounded-full bg-cyan-400" />
 
-              {content.hero.badge}
+              <div className="flex flex-col">
+
+                <span>
+                  {content.hero.badge}
+                </span>
+
+                <span className="mt-1 text-[10px] font-medium tracking-[0.12em] text-cyan-400/80">
+                  {content.hero.slogan}
+                </span>
+
+              </div>
 
             </div>
 
