@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [language, setLanguage] = useState(() => {
@@ -1034,6 +1035,7 @@ function App() {
 
       </footer>
 
+      <Analytics />
     </div>
   )
 }
