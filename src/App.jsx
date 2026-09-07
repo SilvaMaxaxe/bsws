@@ -549,9 +549,9 @@ function App() {
 
             </h1>
 
-            <p className="mt-5 text-lg font-semibold text-slate-300">
-              {content.hero.aka}
-            </p>
+<p className="mt-5 text-lg font-semibold italic text-slate-300">
+  {content.hero.aka}
+  </p>
 
             <p className="mt-6 max-w-xl text-base leading-8 text-slate-400 sm:text-lg">
               {content.hero.description}
